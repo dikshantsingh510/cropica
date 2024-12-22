@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <Marquee
         pauseOnHover
@@ -54,6 +54,6 @@ export default function Home() {
 
       <Faq />
       <Contact />
-    </>
+    </div>
   );
 }
