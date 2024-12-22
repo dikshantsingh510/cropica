@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -21,18 +22,18 @@ const Header = () => {
         {/* Nav */}
         <nav className="hidden justify-center items-center bg-bg_secondary h-[40] w-[440] rounded-3xl  md:flex">
           <ul className="flex justify-center items-center">
-            <li className="mx-4 text-text_primary cursor-pointer hover:text-black">
+            <Link href={'/'} className="mx-4 text-text_primary cursor-pointer hover:text-black">
               Home
-            </li>
-            <li className="mx-4 text-text_primary cursor-pointer hover:text-black">
+            </Link>
+            <Link href={'/about'} className="mx-4 text-text_primary cursor-pointer hover:text-black">
               About
-            </li>
-            <li className="mx-4 text-text_primary cursor-pointer hover:text-black">
+            </Link>
+            <Link href={'/#services'} className="mx-4 text-text_primary cursor-pointer hover:text-black">
               Services
-            </li>
-            <li className="mx-4 text-text_primary cursor-pointer hover:text-black">
+            </Link>
+            <Link href={'/#contact'} className="mx-4 text-text_primary cursor-pointer hover:text-black">
               Contact
-            </li>
+            </Link>
           </ul>
         </nav>
         {/* Nav Button */}
