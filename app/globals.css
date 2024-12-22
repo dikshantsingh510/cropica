@@ -2,20 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.hero_text{
+    @apply text-8xl font-bold text-text_primary;
+}
+.h1{
+  @apply text-6xl font-bold text-text_primary;
+}
+.h2{
+  @apply text-5xl font-bold text-text_primary;
+}
+.h3{
+  @apply text-2xl font-bold text-text_primary;
+}
+.h4{
+  @apply text-xl font-bold text-text_primary;
+}
+.normal_text{
+  @apply text-base text-text_primary;
+}
+.small_text{
+  @apply text-sm;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+.self_center_property{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.marquee_width{
+  width: calc(100% + 20%);
 }
