@@ -17,7 +17,7 @@ function Contact() {
           alt="Description of the image"
           width={400}
           height={160}
-          style={{ objectFit: "cover", width: "100%", height: "auto" }}
+          style={{ objectFit: "cover" }}
           priority
           className="w-24"
         />
